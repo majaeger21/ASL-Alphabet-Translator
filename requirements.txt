@@ -1,0 +1,9 @@
+opencv-python
+mediapipe
+tensorflow
+keras
+numpy
+matplotplib
+scikit-learn
+imageio
+pickle
