@@ -3,7 +3,6 @@ mediapipe
 tensorflow
 keras
 numpy
-matplotplib
+matplotlib
 scikit-learn
 imageio
-pickle
