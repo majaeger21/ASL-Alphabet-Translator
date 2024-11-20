@@ -3,7 +3,7 @@ import numpy as np
 import mediapipe as mp
 import pickle
 
-model_dict = pickle.load(open('./model.p', 'rb'))
+model_dict = pickle.load(open('./multi-layer_perceptron_model.p', 'rb'))
 model = model_dict['model']
 
 mp_hands = mp.solutions.hands

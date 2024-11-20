@@ -10,9 +10,10 @@
     coordinates, associates them with class labels, and saves the processed data and 
     labels to a pickle file for use in machine learning tasks.
 ## train-model.py
-    This script trains a Random Forest classifier on hand landmark data extracted from images. 
-    It splits the data into training and testing sets, evaluates the model's accuracy on the test 
-    set, and saves the trained model to a pickle file for future use.
+    This script trains a Random Forest classifier and a Multi-Layer Perceptron on hand landmark 
+    data extracted from images. It splits the data into training and testing sets, evaluates 
+    the model's accuracy on the test set, and saves the trained models to 
+    separate pickle files.
 ## webcam-predict.py
     This script uses the trained Random Forest model to perform real-time hand gesture 
     recognition via webcam. It leverages MediaPipe's hand-tracking to detect and process 
@@ -24,5 +25,6 @@
     1. pip install -r requirements.txt
     2. python3 collect-hand-imgs.py
     3. python3 create-hands-data.py <-- Make sure DATA_DIR = './data'
-    4. python3 train-model.py 
-    5. python3 webcam-predict1.py
+    4. python3 train-model.py
+    5. python3 webcam-predict1.py <-- You can either load multi-layer_perceptron_model.p or 
+                                      random_forest_model.p in model_dict
